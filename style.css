@@ -11,10 +11,9 @@ body{
 }
 
 header{
-  /*background-color:#fefffe;*/
-  background-color:#yellow;
+  background-color:#fefffe;
   position:relative;
-  height:10%;
+  height:12%;
   font-family:Lato, Helvetica;
   font-size:2vm;
 }
@@ -54,7 +53,7 @@ header{
 
 .sparklerbg img{
   position:absolute;
-  top:-5%;
+  top:-15%;
   left:0;
   width:100%;
   min-width:1000px;
