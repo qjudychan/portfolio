@@ -11,7 +11,8 @@ body{
 }
 
 header{
-  background-color:#fefffe;
+  /*background-color:#fefffe;*/
+  background-color:#yellow;
   position:relative;
   height:10%;
   font-family:Lato, Helvetica;
