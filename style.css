@@ -86,7 +86,7 @@ header{
 .bodysection{
   position:relative;
   width:100%;
-  height:calc(50vw);
+  height:50vw;
   overflow:hidden;
 }
 
@@ -157,7 +157,7 @@ header{
     -moz-transition: opacity 800ms ease-in;
     transition: opacity 800ms ease-in;
     pointer-events: none;
-    height:100vh;
+    height:50vw;
 }
 
 .proj-modal:target {
