@@ -9,30 +9,85 @@
 
 <body>
   <header>
-    <div class="headerleft">JUDY CHAN<span class="lighter"> &nbsp; | &nbsp;UI / UX DESIGNER</span></div>
+    <div class="headerleft"><b><a href=#>JUDY CHAN</a></b> &nbsp; | &nbsp;UI / UX DESIGNER</div>
     <div class="headerright">
       <span class="lighter">
-        <a href=#>PROJECTS</a>
+        <a href="#open-proj-modal">PROJECTS</a>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href=#>ABOUT</a>
+        <a href="#open-about-modal">ABOUT</a>
       </span>
-     </div>
   </header>
   
-  <div class="sparklerbg">
-    <img src="source/Picture1.png">
-    <div class="rotatingwords">
-      <span>experience</span>
-      <span>interface</span>
-      <span>interaction</span>
-    </div>
-    <div class="staticwords">
-      USER
-      <br><br><p id="design">DESIGN</p>
+
+  <div class="bodysection">
+    <!--popups-->
+    <!--projects-->
+    <div id="open-proj-modal" class="proj-modal">
+      <img src="source/Picture2.png" class="bokeh">
+      <div>
+        <a href="#close" title="Close" class="close">ⓧ</a>
+        <div class="overlaytext">
+          <div class="proj 1">
+            <p>
+            <img src="source/Clairvoyage.png" width=35%>
+            <br>
+            <h2 class="whitetext"> Clairvoyage</h2>
+            <h4 class="whitetext"> Travel Mobile Application </h4>
+            <p class="whitetext"> <i>Planning trips with clarity. </i></p>
+          </div>
+
+          <div class="proj 2">
+            <p>
+            <img src="source/Habit.png" width=35%>
+            <br>
+            <h2 class="whitetext"> Habit</h2>
+            <h4 class="whitetext"> Productivity Mobile Application</h4>
+            <p class="whitetext"> <i>Bridging the intention-action gap. </i></p>
+          </div>
+
+          <div class="proj 3">
+            <br><br><br>
+            <h2 class="whitetext"> Sensual Beauty</h2>
+            <h4 class="whitetext"> Retail Website </h4>
+            <p class="whitetext"> <i>Stepping off the carousel. </i></p>
+          </div>
+        </div>
+      </div>
     </div>
 
-  </div>
+      <!--about-->
+      <div id="open-about-modal" class="proj-modal">
+        <img src="source/Picture2.png" class="bokeh">
+        <div>
+          <a href="#close" title="Close" class="close">ⓧ</a>
+          <div class="overlaytext">
+              <br><br><br>
+              <h2 class="whitetext"> Judy is a designer based in New York City.</h2>
+              <h4 class="whitetext"> 
+                <p>Economics at Cornell University.
+                <p>Digital and Graphic Design Certificate at Parsons School of Design.
+                <p>UI / UX Design Certificate at Pratt Institute.
+              </h4>
+              <p class="whitetext"> stuff </p>
+              <br><img src="source/sketches.png" width=30%>
+       
+          </div>
+        </div>
+       </div>
 
+    <!--sparkler-->
+      <img src="source/Picture1.png" class="sparkler">
+      <div class="rotatingwords">
+        <span>experience</span>
+        <span>interface</span>
+        <span>interaction</span>
+      </div>
+      <div class="staticwords">
+        <h2 class="whitetext">USER</h2>
+        <br><br><br><br><h2 class="whitetext" id="design">DESIGN</h2>
+      </div>
+
+</div>
 
 </body>
 </html>

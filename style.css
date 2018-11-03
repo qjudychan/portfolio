@@ -1,87 +1,112 @@
+/* - FONTS AND TEXT - */
+
 @font-face{
   font-family:"brush";
-  src:url("source/Nettizen_TRIAL.otf");
+  src:url("source/Nettizen Script Dancing.otf");
 }
 
-/* Backgrounds */
+h1 {
+  font-size:2.5em;
+  font-weight:400;
+  letter-spacing: 2px;
+}
+
+h2{
+  font-size:1.9em;
+  font-weight:300;
+  letter-spacing: 2px;
+}
+
+
+h3 {
+  font-size:1.4em;
+  font-weight:400;
+  letter-spacing: 1.5px;
+}
+
+h4 {
+  font-size:1em;
+  font-weight:400;
+}
+
+.whitetext{
+  color:#fff;
+}
+
+.annotation {
+
+}
+
+header a{
+  text-decoration: none;
+  color:#636A7E;
+  position:relative;
+}
+
+header a:hover{
+  color:rgba(230,180,0,100%);
+  top:-2px;
+  font-size:1.5vw;
+}
+
+
+/* - SECTIONS: BODY HEADER NAV MODALS- */
 body{
-  background-color:#fefffe;;
+  background-color:#636A7E;
   margin:0px;
   padding:0px;
+  font-family: Europa, Lato, Helvetica, sans-serif;
+  font-weight:300;
+  font-size:1.1em;
 }
 
 header{
   background-color:#fefffe;
   position:relative;
-  height:12%;
-  font-family:Lato, Helvetica;
-  font-size:2vm;
+  height:81px;
+  color:#636A7E;
 }
 
 .headerleft, .headerright{
   margin:0px;
   padding:0px;
   display:inline-block;
-  color:#636A7E;
+  position:absolute;
+  top:45%;
 }
 
 .headerright{
-  position:absolute;
-  top:45%;
   right:3%;
   }
 
-.lighter{
-  font-weight:200;
-  }
-
 .headerleft{
-  position:absolute;
-  top:45%;
   left:3%;
   }
 
-.sparklerbg{
+.bodysection{
   position:relative;
   width:100%;
-  height:50vw;
+  height:calc(50vw);
   overflow:hidden;
-  background-color:#636A7E;
 }
 
 
-.sparklerbg img{
+.sparkler, .bokeh{
   position:absolute;
   top:-15%;
   left:0;
   width:100%;
 }
 
-a{
-  text-decoration: none;
-  color:#636A7E;
-  position:relative;
-  /*transition: top ease 0.5s;*/
-}
-
-a:hover{
-  color:rgba(230,180,0,100%);
-  top:-2px;
-  font-size:1.5vw;
-}
-
 .staticwords{
   text-align:left;
   display:block;
-  margin: auto;
+  margin: 0 auto;
   position:relative;
   width:38vw;
-  top:26%;
-  line-height:254%;
-  font-family:Lato, Helvetica;
-  font-size:2.7vw;
-  font-weight:300;
-  color:#fff;
+  top:25%;
+  line-height:175%;
+  font-size:1.5vw;
 }
 
 #design{
@@ -96,59 +121,162 @@ a:hover{
   font-weight:normal;
   font-size:19vw;
   color:#fff;
-  text-shadow:0px 0px 15px #000;
+  text-shadow:0px 0px 15px rgba(230,180,0,100%);
   position:absolute;
   top:30%;
 }
+
+.overlaytext{
+  margin: 0 auto;
+  position:relative;
+  width:100%;
+  background-color:transparent;
+  text-align: center;
+}
+
+.proj{
+  display: inline-block;
+  background-color:transparent;
+  text-align:center;
+  width:32%;
+  margin:5% auto;
+}
+
+.proj-modal {
+    position: fixed;
+    top: 81px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow:hidden;
+    background-color: transparent;
+    line-height: 100%;
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 800ms ease-in;
+    -moz-transition: opacity 800ms ease-in;
+    transition: opacity 800ms ease-in;
+    pointer-events: none;
+    height:100vh;
+}
+
+.proj-modal:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+.proj-modal > div{
+    width: 80%;
+    position: relative;
+    margin: 5% auto;
+    background-color: transparent;
+}
+
+.close {
+    background-color: transparent;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 30px;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+.close:hover {
+    background: #636A7E;
+}
+
+
+/* - ANIMATION - */
 
 .rotatingwords span{
   position:absolute;
   left:0;
   right:0;
-  /*bottom:50%;*/
   opacity:0;
-  -webkit-animation: rotateWord 6s linear infinite 0s;
-  -ms-animation: rotateWord 6s linear infinite 0s;
-  animation: rotateWord 6s linear infinite 0s;
+  -webkit-animation: rotateWord 6.3s linear infinite 0s;
+  -ms-animation: rotateWord 6.3s linear infinite 0s;
+  animation: rotateWord 6.3s linear infinite 0s;
   }
 
 .rotatingwords span:nth-child(2) {
-  -webkit-animation-delay: 2s; 
-  -ms-animation-delay: 2s; 
-  animation-delay: 2s; 
+  -webkit-animation-delay: 2.1s; 
+  -ms-animation-delay: 2.1s; 
+  animation-delay: 2.1s; 
   }
 
 
 .rotatingwords span:nth-child(3) {
-  -webkit-animation-delay: 4s; 
-  -ms-animation-delay: 4s; 
-  animation-delay: 4s; 
+  -webkit-animation-delay: 4.2s; 
+  -ms-animation-delay: 4.2s; 
+  animation-delay: 4.2s; 
   }
 
 @-webkit-keyframes rotateWord {
     0% { opacity: 0; }
     2% { opacity: 0; -webkit-transform: translateY(30px); }
     5% { opacity: 1; -webkit-transform: translateY(0px);}
-    17% { opacity: 1; -webkit-transform: translateY(0px); }
-    20% { opacity: 0.1; -webkit-transform: translateY(-30px); }
-    60% { opacity: 0; }
+    20% { opacity: 1; -webkit-transform: translateY(0px); }
+    30% { opacity: 0.1; -webkit-transform: translateY(-30px); }
+    /*90% { opacity: 0; }*/
     100% { opacity: 0; }
 }
 @-ms-keyframes rotateWord {
     0% { opacity: 0; }
     2% { opacity: 0; -ms-transform: translateY(30px); }
     5% { opacity: 1; -ms-transform: translateY(0px);}
-    17% { opacity: 1; -ms-transform: translateY(0px); }
-    20% { opacity: 0.1; -ms-transform: translateY(-30px); }
-    60% { opacity: 0; }
+    20% { opacity: 1; -ms-transform: translateY(0px); }
+    30% { opacity: 0.1; -ms-transform: translateY(-30px); }
+    /*90% { opacity: 0; }*/
     100% { opacity: 0; }
 }
 @keyframes rotateWord {
     0% { opacity: 0; }
     2% { opacity: 0; -webkit-transform: translateY(30px); transform: translateY(30px); }
     5% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px);}
-    17% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px); }
-    20% { opacity: 0.1; -webkit-transform: translateY(-30px); transform: translateY(-30px); }
-    60% { opacity: 0; }
+    20% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px); }
+    30% { opacity: 0.1; -webkit-transform: translateY(-30px); transform: translateY(-30px); }
+    /*90% { opacity: 0; }*/
     100% { opacity: 0; }
+}
+
+
+/*#bokeh{
+    -webkit-animation: fadein 0.5s;
+    -moz-animation: fadein 0.5s;
+    -ms-animation: fadein 0.5s; 
+    -o-animation: fadein 0.5s; 
+    animation: fadein 0.5s;
+}*/
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
