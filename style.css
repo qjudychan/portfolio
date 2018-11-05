@@ -57,6 +57,7 @@ body{
   padding:0px;
   font-family: Europa, Lato, Helvetica, sans-serif;
   font-weight:300;
+  -webkit-font-smoothing: antialiased;
   font-size:1.1em;
 }
 
