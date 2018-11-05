@@ -221,23 +221,20 @@ header{
   -webkit-animation: rotateWord 6.3s linear infinite 0s;
   -ms-animation: rotateWord 6.3s linear infinite 0s;
   animation: rotateWord 6.3s linear infinite 0s;
-  -webkit-font-smoothing: antialiased;
   }
 
 .rotatingwords span:nth-child(2) {
   -webkit-animation-delay: 2.1s; 
   -ms-animation-delay: 2.1s; 
   animation-delay: 2.1s; 
-  -webkit-font-smoothing: antialiased;
-  }
+}
 
 
 .rotatingwords span:nth-child(3) {
   -webkit-animation-delay: 4.2s; 
   -ms-animation-delay: 4.2s; 
   animation-delay: 4.2s; 
-  -webkit-font-smoothing: antialiased;
-  }
+}
 
 @-webkit-keyframes rotateWord {
     0% { opacity: 0; }
