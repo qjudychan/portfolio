@@ -58,6 +58,7 @@ body{
   font-family: Europa, Lato, Helvetica, sans-serif;
   font-weight:300;
   font-size:1.1em;
+  text-rendering:optimize-Legibility;
 }
 
 header{
