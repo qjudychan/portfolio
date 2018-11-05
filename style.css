@@ -137,6 +137,7 @@ header{
   text-shadow:0px 0px 15px #e6b400;
   position:absolute;
   top:30%;
+  -webkit-text-stroke: 0.0px;
 }
 
 @media(max-width:700px){
