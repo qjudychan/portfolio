@@ -8,20 +8,20 @@
 h1 {
   font-size:2.5em;
   font-weight:400;
-  letter-spacing: 2px;
+  letter-spacing: 1.75px;
 }
 
 h2{
   font-size:1.9em;
   font-weight:300;
-  letter-spacing: 2px;
+  letter-spacing: 1.75px;
 }
 
 
 h3 {
   font-size:1.4em;
   font-weight:400;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.75px;
 }
 
 h4 {
@@ -58,7 +58,6 @@ body{
   font-family: Europa, Lato, Helvetica, sans-serif;
   font-weight:300;
   font-size:1.1em;
-  text-rendering:optimize-Legibility;
 }
 
 header{
@@ -66,6 +65,7 @@ header{
   position:relative;
   height:81px;
   color:#636A7E;
+  letter-spacing: 1.75px;
 }
 
 .headerleft, .headerright{
@@ -90,7 +90,7 @@ header{
   bottom:0px;
   top:81px;
   overflow:hidden;
-  background:url("source/Picture1.png");
+  background:url("source/Backgroundtext.svg"),url("source/Picture1.png");
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -104,47 +104,17 @@ header{
   width:100%;
 }
 
-.staticwords{
-  text-align:left;
-  display:block;
-  margin: 0 auto;
-  position:relative;
-  width:38vw;
-  top:25%;
-  line-height:175%;
-  font-size:1.5vw;
-  letter-spacing: 5px;
-  /*background:red;*/
-}
-
-@media(max-width:700px){
-.staticwords{
-  font-size:2.5vw;
-  width:60vw;
-  }
-}
-
-#design{
-  text-align:right;
-}
-
 .rotatingwords{
   margin:0 auto;
   width:100%;
   text-align:center;
   font-family:"brush";
   font-weight:normal;
-  font-size:19vw;
+  font-size:calc(100px + 10vw);
   color:#fff;
   text-shadow:0px 0px 15px #e6b400;
   position:absolute;
-  top:30%;
-}
-
-@media(max-width:700px){
-.rotatingwords{
-  font-size:33vw;
-  }
+  bottom:calc(57% + 4vw);
 }
 
 .overlaytext{
@@ -152,7 +122,7 @@ header{
   position:relative;
   width:100%;
   background-color:transparent;
-  text-align: center;
+  /*text-align: center;*/
 }
 
 .proj{
@@ -164,24 +134,23 @@ header{
 }
 
 .proj-modal {
-    position: fixed;
-    top: 81px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    /*overflow:hidden;*/
-    background-color: transparent;
-    line-height: 100%;
-    z-index: 99999;
-    opacity:0;
-    -webkit-transition: opacity 800ms ease-in;
-    -moz-transition: opacity 800ms ease-in;
-    transition: opacity 800ms ease-in;
-    pointer-events: none;
-    background:url("source/Picture2.png");
-    background-size:cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  position: fixed;
+  top: 81px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  line-height: 100%;
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 800ms ease-in;
+  -moz-transition: opacity 800ms ease-in;
+  transition: opacity 800ms ease-in;
+  pointer-events: none;
+  background:url("source/Picture2.png");
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .proj-modal:target {
@@ -229,14 +198,14 @@ header{
   -webkit-animation-delay: 2.1s; 
   -ms-animation-delay: 2.1s; 
   animation-delay: 2.1s; 
-}
+  }
 
 
 .rotatingwords span:nth-child(3) {
   -webkit-animation-delay: 4.2s; 
   -ms-animation-delay: 4.2s; 
   animation-delay: 4.2s; 
-}
+  }
 
 @-webkit-keyframes rotateWord {
     0% { opacity: 0; }
@@ -265,15 +234,6 @@ header{
     /*90% { opacity: 0; }*/
     100% { opacity: 0; }
 }
-
-
-/*#bokeh{
-    -webkit-animation: fadein 0.5s;
-    -moz-animation: fadein 0.5s;
-    -ms-animation: fadein 0.5s; 
-    -o-animation: fadein 0.5s; 
-    animation: fadein 0.5s;
-}*/
 
 
 @keyframes fadein {
