@@ -1,32 +1,41 @@
 /* - FONTS AND TEXT - */
 
 @font-face{
-  font-family:"brush";
+  font-family:"Nettizen Script Dancing";
   src:url("source/Nettizen Script Dancing.otf");
+}
+
+@font-face {
+  font-family: 'Inter UI';
+  font-style:  normal;
+  font-weight: 400;
+  src: url("Inter-UI-Regular.woff2") format("woff2"),
+       url("Inter-UI-Regular.woff") format("woff");
 }
 
 h1 {
   font-size:2.5em;
-  font-weight:400;
-  letter-spacing: 1.75px;
+  font-weight:500;
+  font-family: omnes-pro;
 }
 
 h2{
   font-size:1.9em;
-  font-weight:300;
-  letter-spacing: 1.75px;
+  font-weight:400;
+  font-family: omnes-pro;
 }
 
 
 h3 {
   font-size:1.4em;
-  font-weight:400;
-  letter-spacing: 1.75px;
+  font-weight:300;
+  font-family: omnes-pro;
 }
 
 h4 {
   font-size:1em;
-  font-weight:400;
+  font-weight:300;
+  font-family: omnes-pro;
 }
 
 .whitetext{
@@ -47,13 +56,18 @@ header a:hover{
   color:rgba(230,180,0,100%);
 }
 
+.myname{
+  font-weight:500;
+  font-family: omnes-pro;
+}
 
 /* - SECTIONS: BODY HEADER NAV MODALS- */
 body{
   background-color:#636A7E;
   margin:0px;
   padding:0px;
-  font-family: Europa, Lato, Helvetica, sans-serif;
+  font-family: omnes-semicond, 'Inter UI', sans-serif;
+  letter-spacing: 1.5px;
   font-weight:300;
   font-size:1.1em;
 }
@@ -106,7 +120,7 @@ header{
   margin:0 auto;
   width:100%;
   text-align:center;
-  font-family:"brush";
+  font-family:"Nettizen Script Dancing";
   font-weight:normal;
   font-size:calc(100px + 10vw);
   color:#fff;
