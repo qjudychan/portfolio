@@ -467,6 +467,9 @@ hr{
   .rotatingwords{
     font-size:calc(100px + 32vw);
   }
+  body{
+  background-color:red;
+  }
 }
 
 @media only screen AND (min-device-width : 768px) AND (max-device-width : 1024px) AND (orientation : portrait) { 
