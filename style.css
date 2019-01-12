@@ -14,7 +14,7 @@
 }
 
 h1, h2, h3, h4 {
-  font-family: Arial;
+  font-family: omnes-pro;
 }
 
 h1{
@@ -471,7 +471,7 @@ hr{
 
 @media only screen AND (max-device-width : 768px) AND (max-device-width : 1024px) AND (orientation : portrait) { 
   .rotatingwords{
-    font-size:calc(100px + 25vw);
+    font-size:calc(100px + 24vw);
   }
 }
 
