@@ -13,38 +13,52 @@
        url("Inter-UI-Regular.woff") format("woff");
 }
 
-h1 {
-  font-size:2.5em;
-  font-weight:500;
+h1, h2, h3, h4 {
   font-family: omnes-pro;
 }
 
-h2{
-  font-size:1.9em;
+h1{
+  font-size:2.5em;
   font-weight:400;
-  font-family: omnes-pro;
+  letter-spacing: 5px;
+}
+
+h2{
+  font-size:1.75em;
+  font-weight:400;
+  letter-spacing: 5px;
 }
 
 
 h3 {
-  font-size:1.4em;
-  font-weight:300;
-  font-family: omnes-pro;
+  font-size:1.65em;
+  font-weight:400;
+  letter-spacing: 4.5px;
 }
 
 h4 {
   font-size:1em;
   font-weight:300;
-  font-family: omnes-pro;
+  letter-spacing: 3.5px;
 }
 
-.whitetext{
-  color:#fff;
+h5 {
+  font-size:0.8em;
+  font-weight:300;
+  letter-spacing: 3.5px;
+  color:#B4A491;
 }
 
-.annotation {
-
+h6 {
+  font-size:0.8em;
+  font-weight:300;
+  letter-spacing: 2px;
+  line-height: 0;
+  margin-bottom: 3px;
+  padding-bottom: 3px;
+  margin-top:15px;
 }
+
 
 header a{
   text-decoration: none;
@@ -61,15 +75,52 @@ header a:hover{
   font-family: omnes-pro;
 }
 
+a{
+  text-decoration: none;
+  color:#fff;
+}
+
+ul{
+  text-align: left;
+  margin-left:0%;
+  margin-top:0%;
+  padding-left: 0%;
+}
+
+li{
+  margin-bottom:.6em;
+}
+
+span.center{
+  text-align: center;
+}
+
+.subbullet{
+  margin-left: 5%;
+}
+
+.imagedesc p{
+  font-size:0.7em;
+  margin-top:1.5em;
+  margin-bottom: 1.5em;
+}
+
+p.imagesubheader{
+  font-style: italic;
+  /*color:#A89988;*/
+  /*font-weight: 200;*/
+}
+
 /* - SECTIONS: BODY HEADER NAV MODALS- */
 body{
   background-color:#636A7E;
   margin:0px;
   padding:0px;
   font-family: omnes-semicond, 'Inter UI', sans-serif;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.2px;
   font-weight:300;
   font-size:1.1em;
+  color:#fff;
 }
 
 header{
@@ -96,7 +147,7 @@ header{
   left:3%;
   }
 
-.bodysection{
+.homepagebody, .portfoliobody{
   position:absolute;
   width:100%;
   bottom:0px;
@@ -108,12 +159,12 @@ header{
   background-repeat: no-repeat;
 }
 
-
-.sparkler, .bokeh{
-  position:absolute;
-  top:-15%;
-  left:0;
-  width:100%;
+.portfoliobody{
+  background:url("source/Picture2.png");
+  background-size:cover;
+  background-position: center;
+  text-align: center;
+  overflow:auto;
 }
 
 .rotatingwords{
@@ -193,6 +244,140 @@ header{
     background: #636A7E;
 }
 
+.portfoliotop, .portfolioblock{
+  /*margin-top:35%;*/
+  margin-left:auto;
+  margin-right:auto;
+  width:650px;
+  padding:1.75% 5%;
+  color:#ffffff;
+}
+
+.portfolioblock{
+  background-color: rgb(39,38,44,40%)
+}
+
+
+.artifactcontainer{
+  display:flex;
+  justify-content:space-between;
+  width:100%;
+}
+
+.artifactcontent, .imagecontent{
+  margin:0%;
+  text-align: left;
+  font-size:0.85em;
+}
+
+.artifactcontent{
+  width:70%;
+}
+
+.imagecontent{
+  width:25%;
+}
+
+.annotationleft, .annotationright{
+  width:20%;
+  margin:0%;
+  padding:0%;
+}
+
+.annotationleft{
+  padding-right:2%;
+  border-right:0.25px solid #A89988;
+  text-align: right;
+} 
+
+.annotationright{
+  padding-left:2%;
+  border-left:0.25px solid #A89988;
+  text-align: left;
+}
+
+.imagedesc{
+  padding-left:2%;
+  border-left:0.25px solid rgba(255,255,255,75%);
+  text-align: left;
+  width:45%;
+  margin:0%;
+  font-weight:100;
+}
+
+table{
+  table-layout: fixed;
+  font-size: 0.8em;
+  width:100%;
+  text-align: center;
+  font-weight: 100;
+  border-collapse:collapse;
+  padding:0;
+}
+
+th{
+  word-wrap:break-word;
+  font-weight: 300;
+}
+
+td{
+  vertical-align: top;
+}
+
+.competitivetable tr.xrow:hover{
+  background-color:rgba(255,255,255,10%);
+}
+
+.col1{
+  text-align: left;  
+  width: 37.5%;
+}
+
+td.col1{
+  width: 30%;
+}
+
+td.col2{
+  text-align: left;  
+  width: 70%;
+}
+
+.personatable{
+  padding: 0;
+  margin: 0;
+  vertical-align:;
+}
+
+.personatable ul{
+  display:inline-block;
+  padding:0;
+  padding-bottom:3%;
+  margin:0;
+}
+
+hr{
+  border: 0.25px solid white;
+  width:30%;
+}
+
+.imagepng{
+  display:inline-block;
+}
+
+.userjourney{
+  font-size: 0.6em;
+  color:#DDD3D3;
+}
+
+.userjourney th, .userjourney td{
+  padding-bottom:1.1em; 
+  padding-left: 1.03em;
+  padding-right: 1.03em;
+}
+
+.userjourney td{
+    text-align: left;
+}
 
 /* - ANIMATION - */
 
@@ -275,4 +460,17 @@ header{
 @-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+/* PHONE SUPPORT */
+@media ALL and (max-aspect-ratio: 10/16) { 
+  .rotatingwords{
+    font-size:calc(100px + 32vw);
+  }
+}
+
+@media only screen AND (min-device-width : 768px) AND (max-device-width : 1024px) AND (orientation : portrait) { 
+  .rotatingwords{
+    font-size:calc(100px + 20vw);
+  }
 }
