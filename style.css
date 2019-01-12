@@ -466,7 +466,7 @@ hr{
 /* PHONE SUPPORT */
 @media ALL and (max-aspect-ratio: 10/16) { 
   .rotatingwords{
-    font-size:calc(100px + 32vw);
+    font-size:calc(100px + 30vw);
   }
 }
 
