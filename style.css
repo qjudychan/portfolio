@@ -56,34 +56,38 @@ h5 {
 h6 {
   font-size:0.8em;
   font-weight:300;
-  letter-spacing: 2px;
+  letter-spacing: 3.5px;
   line-height: 0;
   margin-bottom: 3px;
   padding-bottom: 3px;
   margin-top:15px;
-  text-shadow:0px 0px 1px #fff;
+  /*text-shadow:0px 0px 1px #fff;*/
+  color:#B4A491;
+  text-transform: uppercase;
 }
 
 
 header a{
   text-decoration: none;
-  color:#636A7E;
   position:relative;
 }
 
 header a:hover{
   color:rgba(230,180,0,1);
+    text-shadow:0px 0px 15px #e6b400;
 }
 
 .myname{
-  font-weight:500;
+  font-weight:300;
   font-family: omnes-pro;
+  color:#fefffe;
+  text-shadow:0px 0px 11px #e6b400;
+  font-size:1.1em;
 }
 
 a{
   text-decoration: none;
-  /*color:#fff;*/
-  color:#F4ECEC;
+  color:inherit;
 }
 
 ul{
@@ -138,60 +142,75 @@ body{
   font-weight:300;
   font-size:1.1em;
   color:#F4ECEC;
-}
 
-header{
-  background-color:#fefffe;
-  position:relative;
-  height:81px;
-  color:#636A7E;
-  letter-spacing: 1.75px;
-}
-
-.headerleft, .headerright{
-  margin:0px;
-  padding:0px;
-  display:inline-block;
-  position:absolute;
-  top:45%;
-}
-
-.headerright{
-  right:3%;
-  }
-
-.headerleft{
-  left:3%;
-  }
-
-.homepagebody, .portfoliobody{
-  position:absolute;
-  width:100%;
-  bottom:0px;
-  top:81px;
-  overflow:hidden;
   background:url("source/Text.svg"),url("source/Picture1.png");
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
+header{
+  /*background-color:#fefffe;*/
+  background-color:transparent;
+  position:relative;
+  height:81px;
+  letter-spacing: 3px;
+  font-size: 1.0em;
+  z-index: 100000;
+}
+
+
+.headerleft, .headerright{
+  margin:0px;
+  padding:0px;
+  display:inline-block;
+  position:absolute;
+  top:50%;
+  color:#fefffe;
+}
+
+.headerright{
+  right:5%;
+  }
+
+.headerleft{
+  left:5%;
+  }
+
+.homepagebody, .portfoliobodywrapper{
+  position:absolute;
+  width:100%;
+  bottom:0px;
+  top:0px;
+  overflow:hidden;
+}
+
 #about .overlaytext{
   padding-right: 20%;
+  padding-top: 2.5%;
   width:80%;
 }
 
 #projects .overlaytext{
-    display: flex;
+  display: flex;
   justify-content:space-between;
 }
 
-.portfoliobody{
+.portfoliobodywrapper{
   background:url("source/Picture2.png");
   background-size:cover;
   background-position: center;
   text-align: center;
   overflow:auto;
+}
+
+.portfoliobody{
+  top:81px;
+  background-color:transparent;
+  position:fixed;
+  width:100%;
+  height:100%;
+  overflow: auto;
 }
 
 .rotatingwords{
@@ -204,7 +223,7 @@ header{
   color:#fff;
   text-shadow:0px 0px 15px #e6b400;
   position:absolute;
-  bottom:calc(57% + 4vw);
+  bottom:calc(59% + 3.5vw);
 }
 
 .overlaytext{
@@ -224,13 +243,14 @@ header{
 
 .proj-modal {
   position: fixed;
-  top: 81px;
+  /*top: 81px;*/
+  top:0;
   right: 0;
   bottom: 0;
   left: 0;
   background-color: transparent;
   /*line-height: 100%;*/
-  z-index: 99999;
+  z-index: 99999; 
   opacity:0;
   -webkit-transition: opacity 800ms ease-in;
   -moz-transition: opacity 800ms ease-in;
@@ -266,6 +286,7 @@ header{
     text-decoration: none;
     font-size: 1.5em;
 }
+
 .close:hover {
     background: #636A7E;
 }
@@ -280,8 +301,8 @@ header{
 }
 
 .portfolioblock{
-  background-color:yellow;
-  background-color: rgba(39,38,44,0.6);
+  background-color: rgba(39,38,44,0.5);
+  padding-bottom:4%;
 }
 
 
