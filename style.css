@@ -207,6 +207,7 @@ header{
 #projects .overlaytext{
   display: flex;
   justify-content:space-between;
+  margin-top:100px;
 }
 
 .portfoliobodywrapper{
@@ -252,6 +253,8 @@ header{
   text-align:center;
   width:330px;
   margin:2% auto;
+  display:flex;
+  flex-direction:column;
 }
 
 /*.proj h1{
@@ -626,10 +629,34 @@ div.sprite3 {
 
 }
 
-@media screen and (max-width: 800px){ 
+@media screen and (max-width: 900px){ 
   #projects .overlaytext{
   display: flex;
   justify-content:space-between;
   flex-direction:column;
+  margin-top:100px
+}
+
+.proj{
+  width:350px;
+  margin:10px auto;
+  padding-right: 0;
+  flex-direction:row;
+  justify-content:space-between;
+  text-align: left;
+  font-size:0.7em;
+}
+
+.projthumbnailtext{
+  margin-left:20px;
+  width:220px;
+}
+
+.projthumbnail img{
+  width:80px;
+}
+
+.proj-modal{
+  overflow:auto;
 }
 }
