@@ -508,6 +508,11 @@ hr{
   margin-top:4px;
 }
 
+.projthumbnail img{
+  width:130px;
+}
+
+
 footer{
   margin-top: 50px;
   margin-bottom: 150px;
