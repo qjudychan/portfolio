@@ -71,11 +71,11 @@ h6 {
   font-size:0.8em;
   font-weight:300;
   letter-spacing: 3.5px;
-  line-height: 0;
   /*color:#B4A491;*/
   color:#fff;
   text-transform: uppercase;
   margin-top:2px;
+  opacity:0.7;
 }
 
 .whitetext a:hover{
@@ -164,7 +164,7 @@ body{
   font-weight:300;
   font-size:1.1em;
   color:#F4ECEC;
-
+  height:100%;
   background:url("source/Text.svg"),url("source/Picture1.png");
   background-size:cover;
   background-position: center;
@@ -225,11 +225,17 @@ header{
 #projects .overlaytext{
   display: flex;
   justify-content:space-between;
-  margin-top:100px;
+  /*margin-top:115px;*/
+  margin-top:18vh;
+  width:85%;
 }
 
 .overlaytext h4{
   font-size: 1.5em;
+}
+
+.overlaytext h5{
+  font-size: 0.7em;
 }
 
 .portfoliobodywrapper{
@@ -280,9 +286,6 @@ header{
   flex-direction:column;
 }
 
-/*.proj h1{
-  font-size: 2.9em;
-}*/
 
 .proj-modal {
   position: fixed;
@@ -493,11 +496,18 @@ hr{
 }
 
 #projects hr{
-  margin-top:0px;
-  margin-bottom:0px;
+  margin:0px;
   padding:0px;
-  border: 0.5px solid rgba(255,255,255,0.35);
+  border: 0.5px solid rgba(255,255,255,0.2);
   width:25%;
+}
+
+#projects h4{
+  margin-bottom: -10px;
+  }
+
+.projthumbnailtext{
+  margin:0 10%;
 }
 
 .imagepng{
@@ -533,9 +543,13 @@ hr{
 }
 
 .projthumbnail img{
-  width:130px;
+  height:250px;
 }
 
+.projthumbnail{
+  margin-top:0;
+  padding-top:0;
+}
 
 footer{
   margin-top: 50px;
@@ -617,18 +631,18 @@ div.CVheaderimage1 {
   width:560px;
   height:360px;
   position:absolute;
-  background-image:url("source/CVHeader1.png");
+  background-image:url("source/CVHeader3.png");
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-animation: headerFade 6s linear infinite 0s;
-  -ms-animation: headerFade 6s linear infinite 0s;
-  animation: headerFade 6s linear infinite 0s;
+  -webkit-animation: headerFade 7.2s linear infinite 0s;
+  -ms-animation: headerFade 7.2s linear infinite 0s;
+  animation: headerFade 7.2s linear infinite 0s;
   z-index:4;
 }
 
 div.CVheaderimage2 {
-  opacity:0p;
+  opacity:1;
   width:560px;
   height:360px;
   position: absolute;
@@ -636,50 +650,92 @@ div.CVheaderimage2 {
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-animation: headerFade 6s linear infinite 0s;
-  -ms-animation: headerFade 6s linear infinite 0s;
-  animation: headerFade 6s linear infinite 0s;
-    z-index:3;
+  -webkit-animation: headerFade 7.2s linear infinite 0s;
+  -ms-animation: headerFade 7.2s linear infinite 0s;
+  animation: headerFade 7.2s linear infinite 0s;
+  z-index:3;
 }
 
 div.CVheaderimage3 {
-  opacity:0;
+  opacity:1;
   width:560px;
   height:360px;
   position: absolute;
-  background-image:url("source/CVHeader3.png");
-  background-size:cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-animation: headerFade 6s linear infinite 0s;
-  -ms-animation: headerFade 6s linear infinite 0s;
-  animation: headerFade 6s linear infinite 0s;
-  z-index:2;
-}
-
-div.CVheaderimage4 {
-  width:560px;
-  height:360px;
-  position:absolute;
   background-image:url("source/CVHeader1.png");
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index:1;
+  -webkit-animation: headerFade 7.2s linear infinite 0s;
+  -ms-animation: headerFade 7.2s linear infinite 0s;
+  animation: headerFade 7.2s linear infinite 0s;
+  z-index:2;
 }
 
+/* HABIT HEADER IMAGES*/
+div.HBheaderimage1 {
+  width:560px;
+  height:360px;
+  position:absolute;
+  background-image:url("source/HBHeader1.png");
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-animation: headerFade 7.2s linear infinite 0s;
+  -ms-animation: headerFade 7.2s linear infinite 0s;
+  animation: headerFade 7.2s linear infinite 0s;
+  z-index:4;
+}
+
+div.HBheaderimage2 {
+  opacity:1;
+  width:560px;
+  height:360px;
+  position: absolute;
+  background-image:url("source/HBHeader2.png");
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-animation: headerFade 7.2s linear infinite 0s;
+  -ms-animation: headerFade 7.2s linear infinite 0s;
+  animation: headerFade 7.2s linear infinite 0s;
+  z-index:3;
+}
+
+div.HBheaderimage3 {
+  opacity:1;
+  width:560px;
+  height:360px;
+  position: absolute;
+  background-image:url("source/HBHeader3.png");
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-animation: headerFade 7.2s linear infinite 0s;
+  -ms-animation: headerFade 7.2s linear infinite 0s;
+  animation: headerFade 7.2s linear infinite 0s;
+  z-index:2;
+}
+
+
 .headerimage div:nth-child(2){
-  -webkit-animation-delay: 2s; 
-  -ms-animation-delay: 2s; 
-  animation-delay: 2s; 
+  -webkit-animation-delay: 2.4s; 
+  -ms-animation-delay: 2.4s; 
+  animation-delay: 2.4s; 
   }
 
 .headerimage div:nth-child(3){
-  -webkit-animation-delay: 4s; 
-  -ms-animation-delay: 4s; 
-  animation-delay: 4s; 
+  -webkit-animation-delay: 4.8s; 
+  -ms-animation-delay: 4.8s; 
+  animation-delay: 4.8s; 
   }
 
+.headerdesc{
+  width:500px;
+  font-size:0.87em;
+  margin:15px auto;
+  line-height: 160%;
+  opacity:0.85;
+}
 
 
 
@@ -713,26 +769,31 @@ div.CVheaderimage4 {
 
 /* HEADER IMAGES ANIMATION*/
 @-webkit-keyframes headerFade {
-    0% { opacity: 0; }
-    8.3% { opacity: 1; }
-    33% { opacity: 1; }
-    42% { opacity: 0; }
-    100% { opacity: 0; }
+    0% { opacity: 1; }
+    25% { opacity: 1; z-index:5;}
+    40% { opacity: 0; }
+    83% { opacity: 0; }
+    91% { opacity: 1; }
+    100% { opacity: 1; }
 }
+
 @-ms-keyframes headerFade {
-    0% { opacity: 0; }
-    8.3% { opacity: 1; }
-    33% { opacity: 1; }
-    42% { opacity: 0; }
-    100% { opacity: 0; }
+    0% { opacity: 1; }
+    25% { opacity: 1; z-index:5;}
+    40% { opacity: 0; }
+    83% { opacity: 0; }
+    91% { opacity: 1; }
+    100% { opacity: 1; }
 }
+
 @keyframes headerFade {
-    0% { opacity: 0; }
-    8.3% { opacity: 1; }
-    33% { opacity: 1; }
-    42% { opacity: 0; }
-    100% { opacity: 0; }
-} 
+    0% { opacity: 1; }
+    25% { opacity: 1; z-index:5;}
+    40% { opacity: 0; }
+    83% { opacity: 0; }
+    91% { opacity: 1; }
+    100% { opacity: 1; }
+}
 
 
 
@@ -761,7 +822,7 @@ div.CVheaderimage4 {
 
 }
 
-@media screen and (max-width: 900px){ 
+@media screen and (max-width: 1050px){ 
   #projects .overlaytext{
   display: flex;
   justify-content:space-between;
@@ -770,7 +831,7 @@ div.CVheaderimage4 {
 }
 
 .proj{
-  width:350px;
+  width:370px;
   margin:10px auto;
   padding-right: 0;
   flex-direction:row;
@@ -781,11 +842,11 @@ div.CVheaderimage4 {
 
 .projthumbnailtext{
   margin-left:20px;
-  width:220px;
+  width:300px;
 }
 
 .projthumbnail img{
-  width:80px;
+  height:145px;
 }
 
 .proj-modal{
