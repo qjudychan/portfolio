@@ -154,6 +154,10 @@ a h4:hover{
   text-shadow:0px 0px 15px #e6b400;
 }
 
+.portfolioblock p{
+  text-align: left;
+}
+
 /* - SECTIONS: BODY HEADER NAV MODALS- */
 body{
   background-color:#4b5160;
@@ -356,7 +360,8 @@ header{
 }
 
 .portfolioblock{
-  background-color: rgba(39,38,44,0.55);
+  /*background-color: rgba(39,38,44,0.55);*/
+  background-image:linear-gradient(90deg,rgba(39,38,44,0.3),rgba(39,38,44,0.5),rgba(39,38,44,0.7),rgba(39,38,44,0.5),rgba(39,38,44,0.3));
   padding-bottom:4%;
 }
 
@@ -839,6 +844,7 @@ div.HBheaderimage3 {
   text-align: left;
   font-size:0.7em;
 }
+
 
 .projthumbnailtext{
   margin-left:20px;
