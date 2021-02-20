@@ -457,7 +457,7 @@ li{
 
 /* Media Queries */
 
-@media screen and (max-width: 1000px){ 
+@media screen and (max-width: 980px){ 
 .allcontent, .textcontent{
 	margin-left: 90px;
 	margin-right: 90px;
@@ -467,9 +467,13 @@ li{
 	flex-direction:column;
 }
 
-/*.entries-block-C{
-	padding-left:100px;
-	padding-right:100px;
-}*/
+}
+
+/*FOR MOBILE*/
+@media screen and (max-width: 450px){ 
+
+body{
+	background-color: blue;
+}
 
 }
