@@ -466,7 +466,12 @@ li{
 	margin-top: -130px;
 }
 
+#AB_animation_1, #AB_animation_2, #AB_animation_3{
+	width:500px;
+}
+
 #AB_animation_4{
+	width:600px;
 	margin-left:-50px;
 	margin-top: -50px;
 }
@@ -599,6 +604,16 @@ h1{
 	height: auto;
 }
 
+#AB_animation_1, #AB_animation_2, #AB_animation_3{
+	width:87vw;
+}
+
+
+#AB_animation_4{
+	width:calc(86vw*1.2);
+	margin-left:calc(86vw*-0.1);
+	margin-top:calc(86vw*-0.1);
+}
 
 
 } /*closes mobile query*/
