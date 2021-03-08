@@ -60,7 +60,13 @@ h1{
 	letter-spacing: 0.5px;
 }
 
-h2{
+h2, h2 a{
+
+	font-family: 'Warnock-Pro', Garamond, Georgia, serif;
+	font-style: normal;
+	color:#191919;
+	text-transform: none;
+
 	font-size: 28px;
 	font-weight:400;
 	letter-spacing: 0.4px;
@@ -91,6 +97,12 @@ a:hover{
 	background-color:#EFF0EF;
 	border: 3px solid #EFF0EF;
 	border-top: none;
+}
+
+
+a.no-link-style:hover{
+	background: none;
+	border: none;
 }
 
 .body-text{
@@ -358,10 +370,18 @@ footer{
   	-ms-animation: Scroll 10s linear infinite alternate;
   	-webkit-animation: Scroll 10s linear infinite alternate;
 
-
 	animation-delay:0.1ms; /*solves a glitch in safari where animations were going in opposite direction if no delay*/
-
+	
+	/*transition: all 5s ease-in;*/
 }
+
+.mobile-scrolling:hover{
+	/*animation-timing-function: ease;
+	animation-duration:11.5s;*/
+}
+
+
+
 
 @-webkit-keyframes Scroll {
     0% {-webkit-transform: translateY(0); -webkit-top:0;}
@@ -454,6 +474,14 @@ li{
 #MF_animation_3{
 	margin-left:-100px;
 	width:700px;
+}
+
+#MF_animation_4a, #MF_animation_4b{
+	width:800px;
+}
+
+#MF4-wrapper{
+	text-align: left;
 }
 
 .MF_hero{
