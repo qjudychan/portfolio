@@ -612,14 +612,14 @@ header{
 	/*min-height: calc(0.9*86vw);*/
 }
 
-.video-wrapper{
+.video-wrapper, .motion-wrapper{
 	max-width: 86vw;
 	height: calc(0.5*86vw);
 }
 
 .home-wrapper{
 	max-width: 86vw;
-	min-height: calc(0.7*86vw);
+	/*min-*/height: calc(0.7*86vw);
 }
 
 footer{
@@ -680,15 +680,27 @@ h1{
 	height: auto;
 }
 
-#AB_animation_1, #AB_animation_2, #AB_animation_3{
+#AB_animation_1, #AB_animation_2, #AB_animation_3, .HS_animations {
 	width:87vw;
 }
 
+.motion-wrapper{
+	height:auto;
+}
 
 #AB_animation_4{
 	width:calc(86vw*1.2);
 	margin-left:calc(86vw*-0.1);
 	margin-top:calc(86vw*-0.1);
+}
+
+
+#AB_hero{
+	margin-top: -110px;
+}
+
+.desktop-fade{
+
 }
 
 
