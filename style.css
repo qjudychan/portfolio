@@ -347,7 +347,6 @@ footer{
 .mobile-wrapper{
 	width:220px;
 	height:450px;
-	/*475*/
 	overflow:hidden;
 	background-color: #F6F6F6;
 	position:relative;
@@ -358,6 +357,7 @@ footer{
 	height:450px;
 	overflow:hidden;
 	position:relative;
+	background-color: #F6F6F6;
 }
 
 
@@ -608,8 +608,7 @@ header{
 
 .desktop-wrapper{
 	max-width: 86vw;
-	height:auto;
-	/*min-height: calc(0.9*86vw);*/
+	min-height: calc(0.9*86vw);
 }
 
 .video-wrapper, .motion-wrapper{
@@ -697,10 +696,6 @@ h1{
 
 #AB_hero{
 	margin-top: -110px;
-}
-
-.desktop-fade{
-
 }
 
 
