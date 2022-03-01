@@ -319,12 +319,17 @@ footer{
 	max-width: 500px;
 }
 
-.video-wrapper{
+.motion-wrapper, .video-wrapper{
 	width:500px;
 	height:250px;
 	overflow:hidden;
 	background-color: #5F6862;
 	text-align:center;
+}
+
+.motion-wrapper{
+	height:auto;
+	background-color:transparent;
 }
 
 .mobile-collage{
@@ -484,7 +489,9 @@ li{
 }
 
 
-.home-wrapper:hover #AB_hero, .home-wrapper:hover .MF-hero-wrapper{
+.home-wrapper:hover #AB_hero, 
+.home-wrapper:hover .MF-hero-wrapper, 
+.home-wrapper:hover #HS_hero{
 	transition: 0.3s ease;
 	opacity: 0.5;
 	mix-blend-mode: overlay;
@@ -518,6 +525,15 @@ li{
 
 .MF_hero{
 	margin-top:-110px;
+}
+
+/*FOR HYPERSCIENCE MOTION DESIGN EXAMPLES*/
+.HS_animations{
+	width:inherit;
+}
+
+#HS_hero{
+	height:inherit;
 }
 
 /* ABBOT - For INTERACTIONS section videos and HERO ANIMATION*/
